@@ -60,6 +60,7 @@
                 <configuration>
                     <instructions>
                         <Jahia-Module-Type>system</Jahia-Module-Type>
+                        <Jahia-Scripting-Extensions-Priorities>ts=90</Jahia-Scripting-Extensions-Priorities>
                     </instructions>
                 </configuration>
             </plugin>
