@@ -40,11 +40,17 @@
         <groupId>org.jahia.modules</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>multiscripting-tutorial-view</artifactId>
-    <name>Typescript view module</name>
+    <artifactId>multiscripting-tutorial-factory</artifactId>
+    <name>Typescript ScriptEngineFactory implementation</name>
     <packaging>bundle</packaging>
-    <description>This module provides an alternate view for jnt:text nodes, implemented using Typescript</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xafero.ts4j</groupId>
+            <artifactId>typescript4java</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -53,8 +59,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Jahia-Depends>default</Jahia-Depends>
-                        <Jahia-Module-Scripting-Views>typescript</Jahia-Module-Scripting-Views>
+                        <Jahia-Module-Type>system</Jahia-Module-Type>
                     </instructions>
                 </configuration>
             </plugin>
